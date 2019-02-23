@@ -28,7 +28,7 @@ server <- function(input, output) {
     
     ggplot(data=data3 %>% dplyr::filter(STATE==input$State_Name),
            aes(A_PCT, B_PCT)) + 
-      geom_point(color='red')+labs(x="Percent of clients treated for only alcohol abuse", y="Percent of clients treated for both alcohol and drug abuse")
+      geom_point(color='red')+labs(title="Treatment for Alcohol and Drug Abuse vs. Treatment for Alcohol Abuse", x="Percent of clients treated for only alcohol abuse", y="Percent of clients treated for both alcohol and drug abuse")
     
       )
 }
